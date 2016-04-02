@@ -1,0 +1,10 @@
+
+Setup webacess - NAS access Eric	
+setup basic django structure, templates - Eric	
+begin building website  (bootstrap)
+setup simple database (SQLIte, look into grow to POSTGRESS) - Eric
+webscraping to populate database - Rob
+investigate mobile apps (kibbe for android , for IOS) - Joseph
+geocoding - Rob
+
+pinax - django package  (sets up user registration)
