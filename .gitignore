@@ -118,6 +118,7 @@ celerybeat-schedule
 # virtualenv
 venv/
 ENV/
+salvageenv/
 
 # Spyder project settings
 .spyderproject
