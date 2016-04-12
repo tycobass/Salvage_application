@@ -1,0 +1,28 @@
+Create a branch in the local repository (cloned from github)
+-------------------------------------------------------------
+$ git branch testing
+
+Switch from master to the "testing" branch
+----------------------------------------------
+$ git checkout testing
+Switched to branch 'testing'
+Shows (testing) at the end of the prompt
+
+Make change to branch, in this case create a .gitignore at the .git level 
+--------------------------------------------------------------------------
+
+Add and commit newly created .gitignore
+-----------------------------------------
+$ git add .gitignore
+$ git commit -m "add .gitignore"
+
+Push up to GitHub as a branch (testing)
+-------------------------------
+$ git push origin testing
+
+In GitHub from the Overview perspective you will see the master and other branches
+both yours and ones belonging to others.
+-----------------------------------------------------------------------------------
+Select the "New Pull Request"
+Give an explanation of details of interest regarding the pull request
+Select "Create Pull Request"
