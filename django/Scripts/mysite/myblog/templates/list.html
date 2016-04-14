@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Recent Posts</h1>
+  {% comment %} here is where the query happens {% endcomment %}
+  {% for post in posts %}
+  <div class="post">
+    <h2>
+      <a href="{% url 'blog_detail' post.pk %}">{{ post }}</a>
+    </h2>
+
+      <table>
+        <colgroup>
+        <col span="1" width="100" align="left" />
+        <col span="3" width="250" align="left" />
+        </colgroup>
+          <tr>
+            <td>author:</td>
+            <td>created date:</td>
+            <td>published date:</td>
+            <td>modified date:</td>
+          </tr>
+          <tr>
+            <td>{{ post.author }}</th>
+            <td>{{ post.created_date }}</th>
+            <td>{{ post.published_date }}</th>
+            <td>{{ post.modified_date }}</th>
+          </tr>
+      </table>
+
+    <div class="post-body">
+      text:  {{ post.text }}
+    </div>
+    <ul class="categories">
+      {% for category in post.categories.all %}
+        <li>category(s): {{ category }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+{% endblock %}
